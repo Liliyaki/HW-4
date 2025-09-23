@@ -51,25 +51,23 @@ public class Main {
         System.out.println("Задача 6");
         int carriageCapacity = 102;
         int numberOfSeatsInTheCarriage = 60;
-        int occupiedPlaces = 102;
+        int occupiedPlaces = 10;
         if (occupiedPlaces < numberOfSeatsInTheCarriage) {
             System.out.println("В вагоне есть сидячие места.");
-        }
-        if (occupiedPlaces >= numberOfSeatsInTheCarriage && occupiedPlaces>carriageCapacity) {
-            System.out.println("В вагоне остались только стоячие места.");
+        } else if (occupiedPlaces >= numberOfSeatsInTheCarriage && occupiedPlaces != carriageCapacity) {
+            System.out.println("В вагоне есть только стоячие места.");
         } else {
-            System.out.println("В вагоне не осталость свободных мест.");
+            System.out.println("В вагоне нет мест.");
         }
         System.out.println("Задача 7");
-        int one = 10;
-        int two = 16;
-        int three = 13;
-        if (one>two && one>three) {
+        int one = 30;
+        int two = 32;
+        int three = 33;
+        if (one > two && one > three) {
             System.out.println("Число one больше остальных.");
-        }
-        if (two>three && two>three) {
+        } else if (two > one && two > three) {
             System.out.println("Число two больше остальных.");
-        } else{
+        } else {
             System.out.println("Число three больше остальных.");
         }
     }
